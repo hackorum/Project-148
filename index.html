@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-camera position="0 0 2"></a-camera>
+      <a-assets>
+        <a-asset-item
+          id="person"
+          src="./naruto_rigged/scene.gltf"
+        ></a-asset-item>
+      </a-assets>
+      <a-entity
+        position="0 0 -1"
+        gltf-model="#person"
+        scale="0.005 0.005 0.005"
+      ></a-entity>
+    </a-scene>
+  </body>
+</html>
